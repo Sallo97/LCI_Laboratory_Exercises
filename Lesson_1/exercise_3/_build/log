@@ -1,0 +1,88 @@
+# dune exec bin/main.exe
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/sallo/.cache/dune/db
+# Workspace root:
+# /Users/sallo/Documents/University/Courses/[LCI]Language_Compilers_and_interpreters/Laboratory/Exercises/Lesson_1/exercise_3
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/sallo/.opam/default/bin/ocamlc.opt -config > /var/folders/tx/c9t_d96x345_5dy68jn4db_m0000gn/T/dune_9b8b9a_output
+$ (cd _build/default && /Users/sallo/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.exercise_3.objs/byte -I lib/.exercise_3.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+> File "bin/main.ml", line 8, characters 0-12:
+> 8 | Bval of bool
+>     ^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Bval is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 9, characters 2-24:
+> 9 |   | And of b_exp * b_exp
+>       ^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor And is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 10, characters 2-23:
+> 10 |   | Or of b_exp * b_exp
+>        ^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Or is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 11, characters 2-16:
+> 11 |   | Not of b_exp
+>        ^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Not is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 12, characters 2-26:
+> 12 |   | Minor of a_exp * a_exp
+>        ^^^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Minor is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 2, characters 4-15:
+> 2 |     Aval of int
+>         ^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Aval is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 3, characters 2-25:
+> 3 |   | Plus of a_exp * a_exp
+>       ^^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Plus is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 4, characters 2-26:
+> 4 |   | Minus of a_exp * a_exp
+>       ^^^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Minus is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 5, characters 2-26:
+> 5 |   | Times of a_exp * a_exp
+>       ^^^^^^^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Times is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 6, characters 2-20:
+> 6 |   | Of_bool of b_exp
+>       ^^^^^^^^^^^^^^^^^^
+> Error (warning 37 [unused-constructor]): constructor Of_bool is never used to build values.
+> (However, this constructor appears in patterns.)
+>
+> File "bin/main.ml", line 14, characters 8-14:
+> 14 | let rec a_eval = function
+>              ^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value a_eval.
+>
+> File "bin/main.ml", line 30, characters 4-10:
+> 30 | and b_eval = function
+>          ^^^^^^
+> Error (warning 32 [unused-value-declaration]): unused value b_eval.
+[2]

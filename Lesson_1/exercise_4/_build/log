@@ -1,0 +1,7 @@
+# dune init project exercise_4
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/sallo/.cache/dune/db
+# Workspace root:
+# /Users/sallo/Documents/University/Courses/[LCI]Language_Compilers_and_interpreters/Laboratory/Exercises/Lesson_1/exercise_4
+# Auto-detected concurrency: 12
