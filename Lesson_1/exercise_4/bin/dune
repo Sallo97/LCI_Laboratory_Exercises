@@ -1,4 +1,0 @@
-(executable
- (public_name exercise_4)
- (name main)
- (libraries exercise_4))
