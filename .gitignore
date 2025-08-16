@@ -1,2 +1,6 @@
 # Ignore .DS_Store files everywhere in the project
 **/.DS_Store
+Lesson_3/exercise_9/tl_binary_tree.ml
+Lesson_3/exercise_8/fsa_map.cmi
+Lesson_3/exercise_8/fsa_map.cmo
+Lesson_3/exercise_8/a.out
